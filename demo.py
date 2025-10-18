@@ -4,7 +4,7 @@ Computes numbers expressed with Knuth's up-arrow notation.
 
 from argparse import ArgumentParser
 
-from knuth import knuth, print_knuth_result
+from knuth_algo import knuth, print_knuth_result
 
 
 def _make_parser(description: str) -> ArgumentParser:

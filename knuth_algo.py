@@ -27,4 +27,7 @@ def print_knuth_result(n: int, a: int, b: int, result: int) -> None:
 	print(f"{knuth.__name__}({n}, {a}, {b}) = {result}")
 
 
-__all__ = [knuth.__name__]
+__all__ = [
+	knuth.__name__,
+	print_knuth_result.__name__
+]
