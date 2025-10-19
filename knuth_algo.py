@@ -15,7 +15,11 @@ def knuth(n: int, a: int, b: int) -> int:
 	for x in range(1, n+1):
 		_knuth_rec(x, a, b)
 
-	return _knuth_rec(n, a, b)
+	value = _KNUTH_REPO.get_value(n, a, b)
+	if value is None:
+		value = _knuth_rec(n, a, b)
+
+	return value
 
 
 def _knuth_rec(n: int, a: int, b: int) -> int:
