@@ -9,7 +9,10 @@ def knuth(n: int, a: int, b: int) -> int:
 		raise ValueError(
 			f"Knuth expects n>=1, a>=0, b>=0. Recieved n={n}, a={a}, b={b}.")
 
-	return _knuth_rec(n, a, b)
+	for x in range(b+1):
+		value = _knuth_rec(n, a, x)
+
+	return value
 
 
 def _knuth_rec(n: int, a: int, b: int) -> int:

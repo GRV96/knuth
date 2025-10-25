@@ -2,6 +2,7 @@
 Computes numbers expressed with Knuth's up-arrow notation.
 """
 
+
 from argparse import ArgumentParser
 
 from knuth_algo import knuth, print_knuth_value
