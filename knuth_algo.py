@@ -10,11 +10,7 @@ def knuth(n: int, a: int, b: int) -> int:
 			f"Knuth expects n>=1, a>=0, b>=0. Recieved n={n}, a={a}, b={b}.")
 
 	for x in range(b+1):
-		_knuth_rec(n, a, x)
-
-	value = _KNUTH_REPO.get_value(n, a, b)
-	if value is None:
-		value = _knuth_rec(n, a, b)
+		value = _knuth_rec(n, a, x)
 
 	return value
 
